@@ -50,6 +50,7 @@ public class Main {
 //        System.out.println(countByWord.values());
 //        System.out.println(countByWord.entrySet());
 //        System.out.println(countByWord);
+
         for (Map.Entry <String, Integer> e : countByWord.entrySet()) {
 //            if (e.getValue() >= 1) {
                 System.out.println(e.getValue());
