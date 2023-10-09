@@ -4,11 +4,14 @@ public class Main {
     public static void main(String[] args) {
 
         List<Integer> nums = new ArrayList<>(List.of(1, 10, 2, 44, 33, 3, 4, 4, 5, 5, 6, 7, 20));
+//        Collections.sort(nums);
+//        System.out.println(nums);
         List<String> strings = new ArrayList<>(List.of("один", "два","два", "три", "три", "три", "четыре", "четыре", "четыре", "четыре"));
         printOnlyOddNumbers(nums);
         printOnlyEvenNumbers(nums);
         printAllUniqueWords(strings);
         numberOfDuplicatesForEachUniqueWord(strings);
+
     }
 
     static void printOnlyOddNumbers(List<Integer> nums) {
@@ -23,6 +26,7 @@ public class Main {
     }
 
     static void printOnlyEvenNumbers(List<Integer> list) {
+
         Set<Integer> result = new TreeSet<>(list);
         for (Integer i : list) {
             if (i % 2 != 0) {
